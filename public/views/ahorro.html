@@ -1,0 +1,47 @@
+<div class="toast-wrap" id="toastWrap"></div>
+
+<div class="encabezado-lista">
+    <div>
+        <h1>Ahorro</h1>
+        <p class="resumen-historial" id="resumen">Cargando...</p>
+    </div>
+    <span class="total-chip" id="chip">$0.00</span>
+</div>
+
+<div id="vistaLista">
+    <div class="barra-acciones">
+        <button class="btn btn-nuevo" onclick="abrirFormulario()">+ Nuevo ahorro</button>
+    </div>
+    <div class="lista-gastos" id="lista"></div>
+    <div class="ver-mas-wrap" id="verMasWrap"></div>
+</div>
+
+<div id="vistaForm" class="d-none">
+    <div class="panel panel-ancho">
+        <h2 class="titulo-form" id="tituloForm">Nuevo ahorro</h2>
+
+        <form id="formAhorro">
+            <input type="hidden" id="pk_ahorro">
+
+            <div class="campo">
+                <label for="nombre_ahorro">Nombre del ahorro</label>
+                <input type="text" id="nombre_ahorro" placeholder="Ej. Vacaciones" required>
+            </div>
+
+            <div class="campo dinero">
+                <label for="monto">Monto</label>
+                <input type="number" id="monto" step="0.01" placeholder="0.00" required>
+            </div>
+
+            <div class="campo">
+                <label for="descripcion">Descripción</label>
+                <input type="text" id="descripcion" placeholder="Opcional">
+            </div>
+
+            <div class="form-botones">
+                <button type="button" class="btn btn-secundario" onclick="cerrarFormulario()">Cancelar</button>
+                <button type="submit" class="btn btn-primario">Guardar</button>
+            </div>
+        </form>
+    </div>
+</div>

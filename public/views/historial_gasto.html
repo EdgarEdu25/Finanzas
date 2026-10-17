@@ -1,0 +1,25 @@
+<div class="toast-wrap" id="toastWrap"></div>
+
+<div class="encabezado-lista">
+    <div>
+        <h1>Registros de gastos</h1>
+        <p class="resumen-historial" id="resumenHistorial">Cargando...</p>
+    </div>
+    <span class="total-chip" id="totalChip">$0.00</span>
+</div>
+
+<div class="filtros-historial">
+    <div class="buscador-wrap">
+        <span class="icono-buscar">🔍</span>
+        <input type="text" id="buscador" placeholder="Buscar por nombre o categoría">
+    </div>
+
+    <div class="filtro-fecha">
+        <input type="date" id="filtroFecha">
+        <button class="btn-hoy" id="btnHoy" onclick="irHoy()">Hoy</button>
+    </div>
+</div>
+
+<div class="lista-gastos" id="listaGastos"></div>
+
+<div class="ver-mas-wrap" id="verMasWrap"></div>

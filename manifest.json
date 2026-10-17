@@ -1,0 +1,9 @@
+{
+    "name": "Finanzas - Control de Gastos",
+    "short_name": "Finanzas",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#ECEEE6",
+    "theme_color": "#16332B",
+    "icons": []
+}

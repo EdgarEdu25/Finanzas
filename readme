@@ -1,0 +1,13 @@
+Instalar dependencias con npm ínstall
+
+para correr/levantarlo es con este comando node app.js en la terminal apuntando a la carpeta del proyecto
+
+comando: node app.js
+
+Procesos para backend: models, controller, router, 
+
+definir: app.js
+
+procesos para frontend: html, js
+
+definir: layout, menu

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Layout</title>
+<link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="navbar-inner">
+        <div class="brand">
+            <span class="brand-mark">F</span>
+            <div class="brand-text">
+                <strong>Finanzas</strong>
+                <small>Control financiero</small>
+            </div>
+        </div>
+
+        <nav class="nav-links" id="navLinks">
+            <button data-vista="gasto">Nuevo gasto</button>
+            <button data-vista="historial_gasto">Historial</button>
+            <button data-vista="categorias">Categorías</button>
+            <button data-vista="ahorro">Ahorro</button>
+            <button data-vista="limite_gasto">Límite de gasto</button>
+        </nav>
+    </div>
+</header>
+
+<main id="contenido"></main>
+
+<nav class="bottom-nav" id="bottomNav">
+    <button data-vista="gasto"><span class="icono-nav">🧾</span><span>Gasto</span></button>
+    <button data-vista="historial_gasto"><span class="icono-nav">📋</span><span>Historial</span></button>
+    <button data-vista="categorias"><span class="icono-nav">🏷️</span><span>Categorías</span></button>
+    <button data-vista="ahorro"><span class="icono-nav">💰</span><span>Ahorro</span></button>
+    <button data-vista="limite_gasto"><span class="icono-nav">🎯</span><span>Límite</span></button>
+</nav>
+
+<script src="/js/menu.js"></script>
+<script src="/js/confirmar.js"></script>
+<script src="/js/paginacion.js"></script>
+<script src="/js/mostrar_formulario.js"></script>
+</body>
+</html>

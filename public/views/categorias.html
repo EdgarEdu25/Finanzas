@@ -1,0 +1,37 @@
+<div class="toast-wrap" id="toastWrap"></div>
+
+<div class="encabezado-lista">
+    <div>
+        <h1>Categorías</h1>
+        <p class="resumen-historial" id="resumen">Cargando...</p>
+    </div>
+    <span class="total-chip" id="chip">0</span>
+</div>
+
+<div id="vistaLista">
+    <div class="barra-acciones">
+        <button class="btn btn-nuevo" onclick="abrirFormulario()">+ Nueva categoría</button>
+    </div>
+    <div class="lista-gastos" id="lista"></div>
+    <div class="ver-mas-wrap" id="verMasWrap"></div>
+</div>
+
+<div id="vistaForm" class="d-none">
+    <div class="panel panel-ancho">
+        <h2 class="titulo-form" id="tituloForm">Nueva categoría</h2>
+
+        <form id="formCategorias">
+            <input type="hidden" id="pk_categoria">
+
+            <div class="campo">
+                <label for="nombre">Nombre de la categoría</label>
+                <input type="text" id="nombre" placeholder="Ej. Transporte" required>
+            </div>
+
+            <div class="form-botones">
+                <button type="button" class="btn btn-secundario" onclick="cerrarFormulario()">Cancelar</button>
+                <button type="submit" class="btn btn-primario">Guardar</button>
+            </div>
+        </form>
+    </div>
+</div>
